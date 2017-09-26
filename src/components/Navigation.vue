@@ -4,6 +4,7 @@
     <ul>
     <li><router-link to="/">Home</router-link></li>
     <li><router-link to="/meetings">Meetings</router-link></li>
+     <li><router-link to="/store">Store</router-link></li>
      <li><router-link to="/contact">Contact Us</router-link></li>
       <li><router-link to="/donate">Donate</router-link></li>
     </ul>
@@ -55,8 +56,14 @@ nav ul li {
   color: black;
   text-align: center;
 }
+nav ul li:hover {
+background: #aaa;
+}
+nav a {
+      text-decoration: none;
+    }
 @media screen and (max-width: 767px) {
-  nav {
+  nav ul {
     flex-direction: column;
   }
   
